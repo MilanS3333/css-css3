@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.x{background: lightblue;
+			height: 30px;
+			padding: 7.5px 0;
+			margin: 0 0 25px 0;}
+		.y{color: blue;}
+	</style>
+</head>
+<body><form>
+	<div class="x y"><b>User Driven Registration - New User</b></div>
+	<div style="color: red;font-size: 12px;margin: 0 0 10px 0;">Mandatory fields are marked with an asterisk(*)</div>
+	<table cellspacing="40px">
+		<tr><td><b>Account Number<b style="color: red;">*</b></b></td>
+			<td><input type="number" pattern="{9-18}" required>
+				<td>(Account Number is available in your passbook and/or statement of account)</td></td></tr>
+				<tr><td><b>CIF Number<b style="color: red;">*</b></b></td>
+					<td><input type="number" pattern="{11}" required></td>
+					<td>(CIF Number is available in your passbook and/or statement of account)</td></tr>
+					<tr><td><b>Branch Code</b><b style="color: red;">*</b></td>
+						<td><input type="number" pattern="{5}" required></td>
+						<td><input type="button" style="background: orange;border: none;border-radius: 3px;color: white;" value="Get Branch Name">(Please enter 5 digit branch code)</td></tr>
+						<tr><td><b>Country</b></td>
+							<td><select><option hidden>--Select Country--</option>
+								<option>USA/CANADA</option>
+								<option>USA</option>
+								<option>INDIA</option>
+								<option>DUBAI</option></select></td>
+								<td>For Canada, choose USA/CANADA</td></tr>
+								<tr><td><b>Registered mobile Number<b style="color:red;">*</b></b></td>
+									<td><input type="number" style="width: 50px;"><input type="number" style="width: 150px;margin: 10px;" required></td>
+									<td>(Please enter Mobile Number registerd with Bank)</td></tr>
+									<tr><td><b>Facility Requird<b style="color:red;">*</b></b></td>
+										<td><select><option hidden>--select transaction Rights</option></select></td></tr>
+										<tr><td><b>Enter the text as shown in the image<b style="color:red;">*</b></b></td>
+											<td><input type="text"><b style="background:lightblue;border: solid black;margin: 0 0 0 30px;">C7DD7</b>
+											</td></tr>
+											<tr><th colspan="3"><input type="submit" style="background:orange;color: white;border: none;border-radius: 3px;">
+
+</th></tr>
+	</table>
+
+
+</form>
+</body>
+</html>
