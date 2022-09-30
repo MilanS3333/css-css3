@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+
+		body
+		{
+			background: lightblue;
+		}
+
+		.main
+		{
+			height: 320px;
+			width: 500px;
+			background: white;
+			margin: 200px auto;
+			border-radius: 20px;
+			position: relative;
+		}
+
+		.Cart
+		{
+			font-size: 14px;
+			font-weight: 900;
+			position: absolute;
+			top: 20px;
+			left: 30px;			
+		}
+
+		.remove
+		{
+			color: red;
+			font-size: 10px;
+			position: absolute;
+			top: 25px;
+			right: 30px;
+		}
+
+		.apple
+		{
+			position: absolute;
+			top: 70px;
+			left: 30px;
+		}
+
+		.juice
+		{
+			width: 120px;
+			position: absolute;
+			top: 00px;
+			left: 100px;
+			font-weight: 900;
+		}
+
+		.quntity
+		{
+			width: 80px;
+			position: absolute;
+			top: 30px;
+			left: 260px;
+			font-size: 12px;
+
+		}
+
+		.z
+		{
+			height: 20px;
+			width: 20px;
+			border-radius: 100%;
+			margin: 0 5px 0 5px;
+		}
+
+		.p
+		{
+			width: 100px;
+			position: absolute;
+			top: 0;
+			left: 380px;
+		}
+
+		.gra
+		{
+			position: absolute;
+			top: 170px;
+			left: 30px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="Cart">Shopping Cart</div>
+		<div class="remove"><u>Remove all</u></div>
+		<div class="apple">
+			<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdxG8YQMAa5b585zYem2V889t2lNhNH0eGA&usqp=CAU" width="60px" height="60px"></div>
+			<div class="juice">Apple Juice<div style="font-size: 14px;opacity: 0.7;">250ml</div></div>
+			<div class="quntity"><input type="button" value="+" class="z">2<input type="button" value="-" class="z"></div>
+			<div class="p" style="font-weight: 900; width: 150px;font-size: 14px;">$2.99
+				<div><u style="color: skyblue;font-size: 12px;">Save for later</u>
+					<div><u style="color:red;font-size: 10px;">Remove</u></div></div></div>
+		</div>
+				<div class="gra">
+			<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1IO7EBWNJIDiftFybu3vsIr3TF1icRvyxw&usqp=CAU" width="60px" height="60px"></div>
+			<div class="juice">Grapes Juice<div style="font-size: 14px;opacity: 0.7;">250ml</div></div>
+			<div class="quntity"><input type="button" value="+" class="z">1<input type="button" value="-" class="z"></div>
+			<div class="p" style="font-weight: 900; width: 150px;font-size: 14px;">$3.19
+				<div><u style="color: skyblue;font-size: 12px;">Save for later</u>
+					<div><u style="color:red;font-size: 10px;">Remove</u></div></div></div>
+		</div>
+		<div style="width:350px;position:absolute;bottom: 70px;right: 20px;"><hr></div>
+		<div style="font-size: 14px; font-weight:900;position: absolute;
+		bottom: 40px;right: 120px;">Sub-Total
+			<div style="font-size:12px;opacity:0.4;">2 items</div></div>
+			<div style="font-size: 26px; font-weight:900;position: absolute;
+		bottom: 40px;right: 20px;">$6.18</div>
+			<div style="position: absolute;
+		bottom: 10px;right: 20px"><input style="background: #9ec7f7;border: none; height: 25px;width: 150px;border-radius: 30px;" type="button" value="Checkout"></div>
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;font-family: cursive;}
+
+		body
+		{
+			background: #27282d;
+		}
+
+		.main
+		{
+			display: flex;
+		}
+		
+		.background
+		{
+			height: 500px;
+			width: 250px;
+			background: linear-gradient(to top,#191a1f,#353a40);
+			margin: 50px 0 0 200px;
+			border-radius: 30px;
+			position: relative;
+			text-align: center;
+			box-shadow: -2px -2px 10px darkgray,3px 3px 7px black;
+		}
+
+		.back
+		{
+			height: 35px;
+			width: 35px;
+			background: black;
+			border-radius: 100%;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.setting
+		{
+			height: 35px;
+			width: 35px;
+			background: black;
+			border-radius: 100%;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.playlist
+		{
+			color: white;
+			padding: 22px 0 0 0;
+			font-size: 20px;
+		
+		}
+
+		.image
+		{
+			height: 180px;
+			width: 180px;
+			background: black;
+			border-radius: 100%;
+			margin: 40px auto;
+		    box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.song-name
+		{
+			color: white;
+			font-size: 20px;
+		}
+
+		.time
+		{
+			color: white;
+			font-size: 10px;
+			position: relative;
+			margin: 10px 0 0 0;
+		}
+
+        .sec
+		{
+			position: absolute;
+			top: 0;
+			left: 50px;
+		}
+
+		.seconds
+		{
+			position: absolute;
+			top: 0;
+			right: 50px;
+		}
+
+		.range
+		{
+			margin: 20px 0 0 0;
+		}
+
+		.con
+		{
+			
+			display: flex;
+		}
+
+		.previous
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(to top,black,#353a40);
+		    box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+			border-radius: 100%;
+			border: none;
+		
+			margin: 20px 0 0 45px;
+		}
+
+		.play
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(#b43019,#ee5710);
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+			border-radius: 100%;
+			border: none;
+	
+			margin: 20px 0 0 20px;
+		}
+
+		.next
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(to top,black,#353a40);
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+			border-radius: 100%;
+			border: none;
+		
+			margin: 20px 0 0 20px;
+		}
+
+		.like
+		{
+			height: 30px;
+			width: 30px;
+			background: linear-gradient(to top,black,#353a40);
+			border-radius: 100%;
+			border: none;
+			margin: 80px 20px 0 35px;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.imagex
+			{
+			height: 90px;
+			width: 90px;
+			background: linear-gradient(to top,black,#353a40);
+			border-radius: 100%;
+			border: none;
+			margin: 50px 0 0 0;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.x
+        	{
+			height: 30px;
+			width: 30px;
+			background: linear-gradient(to top,black,#353a40);
+			border-radius: 100%;
+			border: none;
+			margin: 80px 0 0 20px;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+		}
+
+		.z
+		{
+			display: flex;
+			margin: 20px;
+			color: white;
+			position: relative;
+			width: 220px;
+			padding: 5px 0 0 5px;
+		}
+
+		.y
+		{
+			height: 25px;
+			width: 25px;
+			background: linear-gradient(to top,black,#353a40);
+			border-radius: 100%;
+			box-shadow: -1px -1px 4px gray,1px 1px 7px black;
+			position: absolute;
+			top: 5px;
+			right: 7px;
+		}
+		
+	
+
+		.e
+		{
+			opacity: 0.4;
+		}
+
+		.p
+		{
+			box-shadow: 0 0 30px black inset;
+			height: 35px;
+			width: 220px;
+			border-radius: 10px;
+
+		}
+
+		.o
+		{
+			background: linear-gradient(#b43019,#ee5710);
+		}
+
+
+		
+
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+	<div class="background">
+
+		
+
+		<input type="button" class="back">
+		<div class="playlist">Playlist</div>
+		<input type="button" class="setting">
+		<div class="image"></div>
+		<div class="song-name">Low Life</div>
+		<div style="color: white;font-size: 10px;">by Aman Jaluria</div>
+		<div class="time"><div class="sec">1.50</div><div class="seconds">3.25</div></div>
+		<div class="range"><input type="range"></div>
+		<div class="con">
+			<div><input type="button" class="previous"></div>
+			<div><input type="button" class="play"></div>
+			<div><input type="button" class="next"></div>
+		</div>
+		
+
+	</div>
+
+	<div class="background">
+		
+		<div class="playlist">Playlist</div>
+		<div style="display: flex;">
+		<div><input type="button" class="like"></div>
+		<div class="imagex"></div>
+		<div><input type="button" class="x"></div>
+		</div>
+		<div>
+			<div class="z">See You Again<div class="y"></div></div>
+			<div class="z">Sorry<div class="y"></div></div>
+			<div class="z p">Low Life<div class="y o"></div></div>
+			<div class="z">Uptown Funk<div class="y"></div></div>
+			<div class="z">Blank Space<div class="y"></div></div>
+			<div class="z e">Shake It Off<div class="y"></div></div>
+			
+		</div>
+	
+	</div>
+</div>
+	
+
+</body>
+</html>

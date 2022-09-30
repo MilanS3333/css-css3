@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.main
+		{
+			height: 100px;
+			width: 100px;
+			background: gray;
+			position: relative;
+		}
+		.front
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: rotateX(0deg);
+			backface-visibility: hidden;
+		}
+		.back
+		{
+			height: 100px;
+			width: 100px;
+			background: green;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: rotateX(180deg);
+			backface-visibility: hidden;
+		}
+		.main:hover .front
+		{transform: rotateX(180deg);}
+		.main:hover .back
+		{transform: rotateX(0deg);}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="front">hii</div>
+		<div class="back">hello</div>
+	</div>
+
+</body>
+</html>
